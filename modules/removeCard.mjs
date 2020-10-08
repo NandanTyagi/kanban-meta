@@ -1,3 +1,5 @@
+'use strict'
+
 export function removeCard(array) {
     console.log('In removeCard!')
     let delBtnsArray = [...document.querySelectorAll('.del-btn')]

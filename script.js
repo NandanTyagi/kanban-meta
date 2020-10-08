@@ -1,3 +1,5 @@
+'use strict'
+
 import { nandanDrag } from './modules/drag.mjs';
 nandanDrag();
 import { addCard } from './modules/addCard.mjs';

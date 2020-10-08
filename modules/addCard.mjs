@@ -1,3 +1,5 @@
+'use strict'
+
 import { removeCard } from "./removeCard.mjs";
 
 export function addCard(addBtnId, columnId) {
