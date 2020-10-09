@@ -4,6 +4,10 @@ import { drag } from "./drag.js";
 import { removeCard } from "./removeCard.js";
 
 export function showCards(){
+    console.log(localStorage.getItem('checkedUsername'));
+    let loggedInUserFirstLetter = localStorage.getItem('checkedUsername').slice(0,1);
+    let loggedInUserRestLetter = localStorage.getItem('checkedUsername').slice(1,localStorage.getItem('checkedUsername').lengt);
+    document.getElementById('logged-in-user').innerText = `${loggedInUserFirstLetter.toLocaleUpperCase()}${loggedInUserRestLetter}` 
     function addCard(addBtnId, columnId) {
         let addBtn = document.getElementById(`${addBtnId}`);
         addBtn.addEventListener('click', (e) => {
