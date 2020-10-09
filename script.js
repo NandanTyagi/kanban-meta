@@ -1,11 +1,12 @@
 'use strict'
 
-import { nandanDrag } from './modules/drag.mjs';
-nandanDrag();
-import { addCard } from './modules/addCard.mjs';
-import { removeCard } from './modules/removeCard.mjs';
-addCard('todo-add-card', 'todo-column');
-addCard('doing-add-card', 'doing-column');
-addCard('test-add-card', 'test-column');
-addCard('done-add-card', 'done-column');
+import { drag } from './modules/drag.js';
+import { showCards } from './modules/card.js';
+import { removeCard } from './modules/removeCard.js';
+import { logIn } from './modules/logIn.js';
+
+
+logIn()
+showCards();
 removeCard();
+drag();
